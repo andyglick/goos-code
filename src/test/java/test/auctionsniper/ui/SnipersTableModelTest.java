@@ -1,21 +1,13 @@
 package test.auctionsniper.ui;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasProperty;
-import static org.hamcrest.Matchers.samePropertyValuesAs;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import org.hamcrest.Matcher;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import auctionsniper.AuctionSniper;
 import auctionsniper.SniperSnapshot;
@@ -25,7 +17,16 @@ import auctionsniper.ui.Column;
 import auctionsniper.ui.SnipersTableModel;
 import auctionsniper.util.Defect;
 
-@RunWith(JMock.class) 
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
+
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasProperty;
+import static org.hamcrest.Matchers.samePropertyValuesAs;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+
+@RunWith(JMock.class)
 public class SnipersTableModelTest { 
   private static final String ITEM_ID = "item 0";
   private final Mockery context = new Mockery(); 

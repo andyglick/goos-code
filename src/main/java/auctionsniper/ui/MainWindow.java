@@ -20,7 +20,6 @@ import auctionsniper.SniperPortfolio;
 import auctionsniper.UserRequestListener.Item;
 import auctionsniper.util.Announcer;
 
-
 public class MainWindow extends JFrame { 
   public static final String APPLICATION_TITLE = "Auction Sniper";
   private static final String SNIPERS_TABLE_NAME = "Snipers Table";
@@ -100,5 +99,4 @@ public class MainWindow extends JFrame {
     snipersTable.setName(SNIPERS_TABLE_NAME); 
     return snipersTable; 
   }
-
 } 
